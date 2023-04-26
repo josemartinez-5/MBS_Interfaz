@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ventana de error</title>
+	<style>
+		#ventana {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 400px;
+			padding: 20px;
+			background-color: white;
+			border: 1px solid black;
+			text-align: center;
+		}
+
+		.oculto {
+			display: none;
+		}
+
+		button {
+			margin: 10px;
+			padding: 10px;
+			border: none;
+			background-color: 	#008000;
+			color: white;
+			font-size: 18px;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background-color:	#008000;
+		}
+	</style>
+	<script>
+		function mostrarVentana() {
+			document.getElementById("ventana").classList.remove("oculto");
+		}
+
+		function cerrarVentana() {
+			document.getElementById("ventana").classList.add("oculto");
+		}
+	</script>
+</head>
+<body>
+	<button onclick="mostrarVentana()">Haz clic aquí para ver el mensaje de error</button>
+	
+	<div id="ventana" class="oculto">
+		<h2>Datos erróneos</h2>
+		<p>Lo siento, pero los datos que ingresaste son incorrectos. Por favor, inténtalo de nuevo.</p>
+		<button onclick="cerrarVentana()">Cerrar</button>
+	</div>
+</body>
+</html>

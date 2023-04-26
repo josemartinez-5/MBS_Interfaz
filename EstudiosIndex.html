@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina con formulario para agregar archivo y datos de los estudios de un paciente">
+    <title> Agregar estudios </title>
+    <link href="styles/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href=estudiostyle.css>
+    <script src="https://kit.fontawesome.com/b85031486b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">
+            <span>M&B&S</span> Mint, Body and Spirit
+        </a>
+        <input type="checkbox" id="menu">
+        <label for="menu" class="fa-solid fa-bars"></label>
+
+        <nav class="navbar">
+            <a href="Principalindex.html">Regresar</a>
+        </nav>
+    </header>
+
+    <div class="primero container ms-2">
+        <div class="row">
+            <div class="col">
+                <h1 style="font-size: 4rem;">Agregar estudios de paciente</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4 ms-2 formulario">
+        <h2><b>Datos de paciente</b></h2>
+        <div class="row row-cols-auto mb-5">
+            <div class="col-6">
+                <label for="paciente_nombre">
+                    <span>Nombre completo: </span>
+                </label>
+                <input type="text" id="paciente_nombre" name="paciente_nombre" size="40">
+            </div>
+            <div class="col-4">
+                <label for="fecha_1consulta">
+                    <span>Fecha de 1a consulta: </span>
+                </label>
+                <input type="date" id="fecha_1consulta" name="fecha_1consulta" max="" value="">
+            </div>
+            <div class="col">
+                <button type="submit" style="padding-inline: 5px 5px;">Buscar paciente</button>
+            </div>
+        </div>
+        <h2><b>Datos de estudio</b></h2>
+        <div class="row row-cols-auto">
+            <div class="col">
+                <label for="estudio_doc">
+                    <span>Archivo: </span>
+                </label>
+                <input type="text" id="estudio_doc" name="estudio_doc" placeholder="Ruta o link">
+                <button type="submit" style="padding-inline: 5px 5px;">Examinar</button>
+            </div>
+            <div class="col">
+                <button type="submit" style="padding-inline: 5px 5px;">Subir archivo</button>
+            </div>
+        </div>
+        <div class="row row-cols-auto mb-5">
+            <div class="col">
+                <label for="estudio_fecha">
+                    <span>Fecha del estudio: </span>
+                </label>
+                <input type="date" id="estudio_fecha" name="estudio_fecha" max="" value="">
+            </div>
+        </div>
+        <h3><b>Parámetros importantes</b></h3>
+        <div class="row row-cols-auto">
+            <div class="col">
+                <label for="param_nombre">
+                    <span>Nombre: </span>
+                </label>
+                <input type="text" id="param_nombre" name="param_nombre" size="18">
+            </div>
+            <div class="col">
+                <label for="param_valor">
+                    <span>Valor: </span>
+                </label>
+                <input type="text" id="param_valor" name="param_valor" size="15">
+            </div>
+            <div class="col">
+                <label for="param_rango">
+                    <span>Rango: </span>
+                </label>
+                <input type="text" id="param_rango" name="param_rango" size="15">
+            </div>
+            <div class="col">
+                <label for="param_observacion">
+                    <span>Observación: </span>
+                </label><br/>
+                <textarea class="largeinput" id="param_observacion" name="param_observacion"
+                rows="3"></textarea>
+            </div>
+        </div>
+        <div class="row row-cols-auto">
+            <div class="col">
+                <button type="submit" style="padding-inline: 5px 5px;">
+                    Agregar otro parámetro
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container ms-2 ultimo">
+        <button class="submit" type="submit">Guardar estudio</button>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: rgb(226, 252, 187);
+}
+
+.contenedor{
+    display: flex;
+    height: 700px;
+    width: 1000px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    margin: auto;
+    margin-top: 150px;
+}
+
+.informacion1{
+    background-image: url(FondoV.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 50px;
+    width: 50%;
+}
+
+.txt1{
+    color:darkgreen;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.informacion1 h2 {
+    color: #189422;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.informacion1 hr {
+    width: 55px;
+    border: 4px solid #0a6412;
+    margin-left: 170px;
+    margin-bottom: 25px;
+}
+
+.form{
+    padding: 150px 100px;
+    width: 50%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.form h2{
+    color: darkgreen;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.form p{
+    font-size: 16px;
+    color: #dadada;
+    margin-bottom: 25px;
+}
+
+.entradas{
+    display: flex;
+    flex-direction: column;
+}
+
+.box{
+    outline: none;
+    border-color: darkgreen;
+    border-width: 0px;
+    border-style: solid;
+    padding: 15px 35px;
+    margin-bottom: 20px;
+    background-color: #F9F9F9;
+}
+
+.entradas a{
+    color:darkgreen;
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+.entradas p{
+    color:rgb(131, 219, 131);
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+.submit{
+    background-color: darkgreen;
+    padding: 15px;
+    border: 0;
+    color:#fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 25px;
+}
+
+
+@media(max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media(max-width:450px){
+    html{
+        font-size: 49%;
+    }
+}

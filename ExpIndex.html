@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expediente</title>
+    <link rel="stylesheet" href=Expstyle.css>
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <span>M&B&S</span> Mint, Body and Spirit
+        </a>
+ 
+
+        <nav class="navbar">
+            <a href="Principalindex.html">Regresar a inicio</a>
+        </nav>
+
+    </header>
+
+    <section>
+
+        <h3> Expedientes</h3>
+            
+        <div class="Exp" id="Exp" >
+            <form action="/buscar_archivos_txt" method="GET">
+                <label for="buscar" class="buscarnombre">Buscar archivos.txt:</label>
+                <input type="text" class="busqueda" name="busqueda" size="40">
+                <button type="submit" class="btnBuscar" >Buscar paciente</button>
+                <label for="fecha" class="fecha"> Fecha 1a consulta:</label>
+                <input type="date" class="fecha_1aconsulta" size="40">
+                <button type="submit" class="imprimir"> Imprimir expediente </button>
+              </form>
+        </div>
+    </section>
+
+</body>
+</html>

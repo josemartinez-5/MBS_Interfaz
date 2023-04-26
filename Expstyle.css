@@ -1,0 +1,148 @@
+:root{
+    --verde: darkgreen;
+    --verdeClaro: rgb(131, 219, 131);
+    --degradado:linear-gradient(90deg,var(var(--verdeClaro)),var(var(--verde)));
+    --gris:rgb(32, 32, 32);
+}
+
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+  
+}
+
+*::selection{
+    background: var(--verdeClaro);
+    color: white;
+}
+
+html{
+    font-size: 62.4%;
+    overflow: hidden;
+}
+
+body{
+    background: hsla(126, 90%, 64%, 1);
+
+    background: linear-gradient(90deg, hsla(126, 90%, 64%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(126, 90%, 64%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(126, 90%, 64%, 1) 0%, hsla(0, 0%, 100%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#51f662", endColorstr="#ffffff", GradientType=1 );
+    }
+
+section{
+    font-size: 25px;
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+}
+
+div{
+    margin-top: 1rem;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid var(--verde);
+    box-shadow: 0 .5rem 1rem rgb(132, 161, 132);
+}
+
+h3{
+    font-size: 40px;
+    padding-top: 7.5rem;
+}
+
+
+label.buscarnombre{
+    font-size: 20px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    color: var(--gris);
+}
+
+label.fecha{
+    font-size: 20px;
+    margin: 1rem;
+    color: var(--gris);
+}
+
+
+button{
+    font-size: 20px;
+    padding: 0.5rem;
+    margin:1rem;
+    border-radius: 5px;
+    border: 1px solid var(--gris);
+    color: var(--gris);
+}
+
+input.busqueda{
+    font-size: 20px;
+    border: 1px solid var(--gris);
+    margin-left: 1rem;
+    color:var(--gris);
+}
+
+input.fecha_1aconsulta{
+    font-size: 20px;
+    color: var(--gris);
+}
+
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(31, 110, 31);
+    box-shadow: 0 .5rem 1rem rgb(132, 161, 132);
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo{
+    font-size: 25px;
+    color: #fff;
+}
+
+header span{
+    color: var(--verdeClaro);
+}
+
+header .navbar a{
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    color: #fff;
+}
+
+header .navbar a:hover{
+    color: var(--verdeClaro);
+}
+
+
+
+@media(max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media(max-width:450px){
+    html{
+        font-size: 49%;
+    }
+}
+

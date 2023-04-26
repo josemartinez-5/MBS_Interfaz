@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: rgb(226, 252, 187);
+}
+
+.contenedorR{
+    display: flex;
+    height: 700px;
+    width: 1000px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    margin: auto;
+    margin-top: 150px;
+}
+
+.informacionR1{
+    background-image: url(FondoV.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 50px;
+    width: 50%;
+}
+
+.txt1R{
+    color:darkgreen;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.informacionR1 h2 {
+    color: #189422;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.informacionR1 hr {
+    width: 55px;
+    border: 4px solid #0a6412;
+    margin-left: 170px;
+    margin-bottom: 25px;
+}
+
+
+.formR{
+    padding: 150px 100px;
+    width: 50%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.formR h2{
+    color: darkgreen;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.formR p{
+    font-size: 16px;
+    color: #dadada;
+    margin-bottom: 25px;
+}
+
+.entradasR{
+    display: flex;
+    flex-direction: column;
+}
+
+.box{
+    outline: none;
+    border-color: darkgreen;
+    border-width: 0px;
+    border-style: solid;
+    padding: 15px 35px;
+    margin-bottom: 20px;
+    background-color: #F9F9F9;
+}
+
+.entradasR a{
+    color:darkgreen;
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+.entradasR p{
+    color:rgb(131, 219, 131);
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+.cont1{
+    margin-bottom: 5px;
+}
+.submit{
+    background-color: darkgreen;
+    padding: 15px;
+    border: 0;
+    color:#fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 25px;
+}
